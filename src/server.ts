@@ -18,9 +18,23 @@ const prompt = require("prompt-sync")();
 // else {
 //     console.log('O numero '+numero+' é negativo.')
 // }
-let nota_1:number = 8//prompt('Digite a primeira nota: ')
-let nota_2:number= 9//prompt('Digite a segunda nota: ')
-let nota_3:number= 5//prompt('Digite a terceira nota: ')
+//execicio TypeScript
+   
 
-let media:number = (nota_1 + nota_2 + nota_3)/3
-console.log(media)
+let nota_1:number = parseInt(prompt('Digite a primeira nota: '))
+let nota_2:number = parseInt(prompt('Digite a segunda nota: ')) 
+let nota_3:number = parseInt(prompt('Digite a terceira nota: '))    
+let media = (nota_1 + nota_2 + nota_3)/3  
+// console.log(media)
+
+if (media <= 4.9){
+    console.log("A media do aluno foi "+media+", então o aluno está REPROVADO!")
+}
+
+else if(media >= 5 && media < 6.9){
+    console.log("A media do aluno foi "+media+", então o aluno está em RECUPERAÇÃO!")
+}
+
+else if (media>= 7){
+    console.log("A media do aluno foi " +media+ ", então o aluno está APROVADO!")
+}
