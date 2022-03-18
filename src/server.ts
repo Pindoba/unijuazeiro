@@ -31,7 +31,7 @@ if (media <= 4.9){
     console.log("A media do aluno foi "+media+", então o aluno está REPROVADO!")
 }
 
-else if(media >= 5 && media < 6.9){
+else if(media >= 5 && media <= 6.9){
     console.log("A media do aluno foi "+media+", então o aluno está em RECUPERAÇÃO!")
 }
 
